@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { fadeUp, stagger } from "@/lib/animations";
 
 const TESTIMONIALS_STAGGER = stagger(0.15);
-const STATS_STAGGER = stagger(0.1);
 
 const testimonials = [
   {
@@ -86,35 +85,6 @@ export default function Testimonials() {
           ))}
         </motion.div>
 
-        {/* Stats bar */}
-        <motion.div
-          className="rounded-2xl p-8"
-          style={{ backgroundColor: "#17191E" }}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <motion.div
-            className="flex flex-wrap justify-center gap-10 items-center"
-            variants={STATS_STAGGER}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-          >
-            {[
-              { value: "150+", label: "HVAC shops using Obby" },
-              { value: "$2.1M+", label: "In jobs recovered" },
-              { value: "4.9★", label: "Average rating" },
-              { value: "98%", label: "Retention rate" },
-            ].map(({ value, label }) => (
-              <motion.div key={label} className="text-center" variants={fadeUp}>
-                <p className="text-3xl font-black mb-1" style={{ color: "#CCFF33" }}>{value}</p>
-                <p className="text-sm text-gray-500">{label}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   );

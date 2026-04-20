@@ -70,18 +70,25 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-4 pb-4 pt-2">
+        <div
+          className="md:hidden px-4 pb-5 pt-3 border-t border-white/20"
+          style={{
+            background: "rgba(255, 255, 255, 0.65)",
+            backdropFilter: "blur(16px)",
+            WebkitBackdropFilter: "blur(16px)",
+          }}
+        >
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="block py-3 text-sm font-semibold text-gray-700 border-b border-gray-50 no-underline"
+              className="block py-3 text-sm font-semibold text-gray-800 border-b border-black/5 no-underline"
             >
               {link.label}
             </a>
           ))}
-          <a href="#booking-form" className="btn-primary w-full mt-3 justify-center text-sm rounded-lg">
+          <a href="#booking-form" className="btn-primary w-full mt-4 justify-center text-sm rounded-lg">
             <Phone className="w-4 h-4" />
             Book My Setup Call
           </a>

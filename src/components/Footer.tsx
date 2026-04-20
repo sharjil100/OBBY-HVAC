@@ -30,15 +30,20 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-bold text-sm mb-4">Product</h4>
+            <h4 className="text-white font-bold text-sm mb-4">Quick Links</h4>
             <div className="space-y-2.5">
-              {["How It Works", "Pricing", "FAQ", "Book a Call"].map((link) => (
+              {[
+                { label: "How It Works", href: "#how-it-works" },
+                { label: "Pricing", href: "#pricing" },
+                { label: "FAQ", href: "#faq" },
+                { label: "Book a Call", href: "#booking-form" },
+              ].map(({ label, href }) => (
                 <a
-                  key={link}
-                  href="#"
+                  key={label}
+                  href={href}
                   className="block text-sm text-gray-500 hover:text-white transition-colors no-underline"
                 >
-                  {link}
+                  {label}
                 </a>
               ))}
             </div>

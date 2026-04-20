@@ -30,7 +30,7 @@ export default function BookingForm() {
   }
 
   return (
-    <div className="grid lg:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
+    <div id="booking-form" className="grid lg:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
       {/* Left: copy */}
       <div>
         <div className="section-badge">
