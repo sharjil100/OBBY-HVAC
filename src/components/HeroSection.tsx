@@ -71,12 +71,57 @@ export default function HeroSection() {
           </div>
 
           {/* Mobile/tablet hero image */}
-          <div className="block lg:hidden rounded-2xl overflow-hidden shadow-xl w-full">
-            <img
-              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=85&fit=crop"
-              alt="HVAC technician working on rooftop unit"
-              className="w-full h-64 sm:h-80 object-cover"
-            />
+          <div className="block lg:hidden">
+            <div className="rounded-2xl overflow-hidden shadow-xl w-full">
+              <img
+                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=85&fit=crop"
+                alt="HVAC technician working on rooftop unit"
+                className="w-full h-64 sm:h-72 object-cover"
+              />
+            </div>
+
+            {/* Cards flush below image */}
+            <div className="flex gap-2 mt-2">
+              {/* Missed call */}
+              <div className="flex-1 bg-white rounded-xl shadow-lg p-2.5 border border-red-100">
+                <div className="flex items-center gap-2 mb-1.5">
+                  <div className="w-7 h-7 bg-red-100 rounded-full flex-shrink-0 flex items-center justify-center">
+                    <Phone className="w-3 h-3 text-red-500" />
+                  </div>
+                  <div>
+                    <p className="text-[11px] font-bold text-black leading-tight">Missed Call</p>
+                    <p className="text-[10px] text-gray-400">Unknown • Just now</p>
+                  </div>
+                </div>
+                <div className="bg-red-50 rounded-lg p-1.5">
+                  <p className="text-[10px] text-red-700 font-semibold leading-tight">🔥 Emergency – AC out in July heat</p>
+                  <p className="text-[10px] text-red-400 mt-0.5">Potential $12,400 install</p>
+                </div>
+              </div>
+
+              {/* Obby captured */}
+              <div
+                className="flex-1 rounded-xl shadow-lg p-2.5 border"
+                style={{ backgroundColor: "#17191E", borderColor: "rgba(204,255,51,0.3)" }}
+              >
+                <div className="flex items-center gap-2 mb-1.5">
+                  <div className="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center" style={{ backgroundColor: "rgba(204,255,51,0.15)" }}>
+                    <CheckCircle2 className="w-3 h-3" style={{ color: "#CCFF33" }} />
+                  </div>
+                  <div>
+                    <p className="text-[11px] font-bold text-white leading-tight">Obby Captured It</p>
+                    <p className="text-[10px]" style={{ color: "#CCFF33" }}>Tagged: EMERGENCY</p>
+                  </div>
+                </div>
+                <p className="text-[10px] text-gray-400 mb-1.5 leading-tight">SMS sent to owner + review follow-up scheduled</p>
+                <div className="flex items-center gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-2.5 h-2.5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                  <span className="text-[10px] text-gray-500 ml-1">Review requested</span>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right: Hero Image + Floating Cards */}

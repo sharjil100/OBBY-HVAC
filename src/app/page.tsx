@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import MarqueeBanner from "@/components/MarqueeBanner";
 import WhoItIsFor from "@/components/WhoItIsFor";
 import ProblemSection from "@/components/ProblemSection";
 import HowItWorks from "@/components/HowItWorks";
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
+        <MarqueeBanner />
         <WhoItIsFor />
         <ProblemSection />
         <HowItWorks />
