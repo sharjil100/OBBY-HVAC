@@ -21,7 +21,7 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[88vh]">
           {/* Left: Copy */}
-          <div className="relative z-10 py-12 lg:py-0">
+          <div className="relative z-10 py-12 lg:py-0 flex flex-col sm:items-center lg:items-start sm:text-center lg:text-left">
             <div className="section-badge">
               <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
               Trusted by HVAC shops across the US
@@ -47,7 +47,7 @@ export default function HeroSection() {
               flat monthly fee.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 mb-4">
+            <div className="flex flex-col sm:flex-row gap-3 mb-4 sm:justify-center lg:justify-start">
               <a href="#booking-form" className="btn-primary text-base px-7 py-4 rounded-lg font-black">
                 <Phone className="w-5 h-5" />
                 Book 10‑Minute Setup Call
@@ -59,7 +59,7 @@ export default function HeroSection() {
               No setup fee. Month‑to‑month. Live in one short call.
             </p>
 
-            <div className="flex flex-wrap gap-5 mb-10">
+            <div className="flex flex-wrap gap-5 mb-10 sm:justify-center lg:justify-start">
               {trustBadges.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-2 text-sm text-gray-500">
                   <Icon className="w-4 h-4 text-green-600" strokeWidth={2.5} />
@@ -68,28 +68,15 @@ export default function HeroSection() {
               ))}
             </div>
 
-            <div className="flex items-center gap-3">
-              <div className="flex -space-x-2">
-                {[
-                  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop&crop=face",
-                  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face",
-                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face",
-                  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face",
-                ].map((src, i) => (
-                  <img key={i} src={src} alt="HVAC owner" className="w-9 h-9 rounded-full border-2 border-white object-cover" />
-                ))}
-              </div>
-              <div>
-                <div className="flex gap-0.5">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-xs text-gray-500 mt-0.5">
-                  <span className="font-bold text-black">150+ HVAC owners</span> already using Obby
-                </p>
-              </div>
-            </div>
+          </div>
+
+          {/* Mobile/tablet hero image */}
+          <div className="block lg:hidden rounded-2xl overflow-hidden shadow-xl w-full">
+            <img
+              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=85&fit=crop"
+              alt="HVAC technician working on rooftop unit"
+              className="w-full h-64 sm:h-80 object-cover"
+            />
           </div>
 
           {/* Right: Hero Image + Floating Cards */}
@@ -155,14 +142,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-gray-100 mt-8">
-          <p className="text-center text-xs text-gray-400 uppercase tracking-widest font-bold mb-5">Shops in</p>
-          <div className="flex flex-wrap justify-center gap-6 items-center opacity-40">
-            {["Texas", "Florida", "Arizona", "California", "Georgia", "North Carolina", "Ohio"].map((state) => (
-              <span key={state} className="text-sm font-bold text-gray-700">{state}</span>
-            ))}
-          </div>
-        </div>
       </div>
 
       <div id="booking-form" className="mt-16 border-t border-gray-100" style={{ backgroundColor: "#FAFAFA" }}>

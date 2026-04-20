@@ -101,19 +101,6 @@ export default function ProblemSection() {
           </motion.div>
         </motion.div>
 
-        <motion.div
-          className="mt-8 rounded-2xl overflow-hidden"
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <img
-            src="https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?w=1200&q=85&fit=crop"
-            alt="Frustrated homeowner unable to reach HVAC service"
-            className="w-full h-48 object-cover object-center"
-          />
-        </motion.div>
       </div>
     </section>
   );
