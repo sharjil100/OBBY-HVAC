@@ -23,9 +23,9 @@
 }
 
 [data-theme="gold"] {
-  --accent: #F5A623;
-  --accent-rgb: 245, 166, 35;
-  --accent-hover: #E89500;
+  --accent: #FFBF4D;
+  --accent-rgb: 255, 191, 77;
+  --accent-hover: #F5A623;
 
   /* Navbar */
   --nav-bg: #000000;

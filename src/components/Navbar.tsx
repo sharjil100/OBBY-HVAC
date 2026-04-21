@@ -62,8 +62,8 @@ export default function Navbar() {
               title={isGold ? "Switch to Lime theme" : "Switch to Gold theme"}
               className="w-7 h-7 rounded-full border-2 transition-all duration-300 hover:scale-110 focus:outline-none"
               style={{
-                backgroundColor: isGold ? "#CCFF33" : "#F5A623",
-                borderColor: isGold ? "rgba(204,255,51,0.4)" : "rgba(245,166,35,0.4)",
+                backgroundColor: isGold ? "#CCFF33" : "#FFBF4D",
+                borderColor: isGold ? "rgba(204,255,51,0.4)" : "rgba(255,191,77,0.4)",
               }}
             />
             <a href="#booking-form" className="btn-primary text-sm px-5 py-2.5 rounded-lg">
@@ -79,8 +79,8 @@ export default function Navbar() {
               title={isGold ? "Switch to Lime theme" : "Switch to Gold theme"}
               className="w-6 h-6 rounded-full border-2 transition-all duration-300 hover:scale-110 focus:outline-none"
               style={{
-                backgroundColor: isGold ? "#CCFF33" : "#F5A623",
-                borderColor: isGold ? "rgba(204,255,51,0.4)" : "rgba(245,166,35,0.4)",
+                backgroundColor: isGold ? "#CCFF33" : "#FFBF4D",
+                borderColor: isGold ? "rgba(204,255,51,0.4)" : "rgba(255,191,77,0.4)",
               }}
             />
             <button
