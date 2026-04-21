@@ -22,12 +22,10 @@ const reasons = [
   {
     icon: Wrench,
     title: "Built for HVAC, not every business.",
-    desc: `We know the difference between "no heat," "AC not cooling," tune‑ups, and quotes – and we tag calls that way.`,
+    desc: `We know the difference between "no heat," "AC not cooling," tune-ups, and quotes – and we tag calls that way.`,
     contrast: "vs. Generic answering services that treat all calls the same",
   },
 ];
-
-
 
 export default function WhyDifferent() {
   return (
@@ -41,10 +39,20 @@ export default function WhyDifferent() {
           transition={{ duration: 0.5 }}
         >
           <div className="section-badge">Why This Is Different</div>
-          <h2 className="text-3xl sm:text-4xl font-black text-black mb-4 leading-tight" style={{ letterSpacing: "-0.02em" }}>
+
+          <h2
+            className="text-3xl sm:text-4xl font-black mb-4 leading-tight"
+            style={{ color: "var(--foreground)", letterSpacing: "-0.02em" }}
+          >
             Not just another answering service
           </h2>
-          <p className="text-gray-500 text-lg">We built Obby for HVAC specifically. That changes everything.</p>
+
+          <p
+            className="text-lg"
+            style={{ color: "var(--gray-text)" }}
+          >
+            We built Obby for HVAC specifically. That changes everything.
+          </p>
         </motion.div>
 
         <motion.div
@@ -58,18 +66,53 @@ export default function WhyDifferent() {
             <motion.div
               key={title}
               variants={fadeUp}
-              className="rounded-2xl p-8 border border-gray-100 bg-white hover:shadow-lg transition-shadow"
+              className="rounded-2xl p-8 border transition-shadow hover:shadow-lg"
+              style={{
+                backgroundColor: "var(--background)",
+                borderColor: "rgba(0,0,0,0.06)",
+              }}
             >
               <div
                 className="w-12 h-12 rounded-xl flex items-center justify-center mb-6"
-                style={{ backgroundColor: i === 1 ? "#17191E" : "#CCFF33" }}
+                style={{
+                  backgroundColor: i === 1 ? "var(--dark)" : "var(--accent)",
+                }}
               >
-                <Icon className="w-6 h-6" style={{ color: i === 1 ? "#CCFF33" : "#000" }} />
+                <Icon
+                  className="w-6 h-6"
+                  style={{
+                    color: i === 1 ? "var(--accent)" : "#000000",
+                  }}
+                />
               </div>
-              <h3 className="text-xl font-black text-black mb-3" style={{ letterSpacing: "-0.01em" }}>{title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed mb-5">{desc}</p>
-              <div className="rounded-lg p-3 border border-gray-100" style={{ backgroundColor: "#F8F8F8" }}>
-                <p className="text-xs text-gray-400 italic">{contrast}</p>
+
+              <h3
+                className="text-xl font-black mb-3"
+                style={{ color: "var(--foreground)", letterSpacing: "-0.01em" }}
+              >
+                {title}
+              </h3>
+
+              <p
+                className="text-sm leading-relaxed mb-5"
+                style={{ color: "var(--gray-text)" }}
+              >
+                {desc}
+              </p>
+
+              <div
+                className="rounded-lg p-3 border"
+                style={{
+                  backgroundColor: "rgba(0,0,0,0.025)",
+                  borderColor: "rgba(0,0,0,0.06)",
+                }}
+              >
+                <p
+                  className="text-xs italic"
+                  style={{ color: "rgba(0,0,0,0.45)" }}
+                >
+                  {contrast}
+                </p>
               </div>
             </motion.div>
           ))}

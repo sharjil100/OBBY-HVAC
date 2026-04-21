@@ -34,7 +34,7 @@ export default function HeroSection() {
               Stop Losing{" "}
               <span
                 className="relative inline-block px-2 rounded-md"
-                style={{ backgroundColor: "#CCFF33" }}
+                style={{ backgroundColor: "var(--accent)" }}
               >
                 $8k–$30k
               </span>{" "}
@@ -102,15 +102,15 @@ export default function HeroSection() {
               {/* Obby captured */}
               <div
                 className="flex-1 rounded-xl shadow-lg p-2.5 border"
-                style={{ backgroundColor: "#17191E", borderColor: "rgba(204,255,51,0.3)" }}
+                style={{ backgroundColor: "#17191E", borderColor: "rgba(var(--accent-rgb), 0.3)" }}
               >
                 <div className="flex items-center gap-2 mb-1.5">
-                  <div className="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center" style={{ backgroundColor: "rgba(204,255,51,0.15)" }}>
-                    <CheckCircle2 className="w-3 h-3" style={{ color: "#CCFF33" }} />
+                  <div className="w-7 h-7 rounded-full flex-shrink-0 flex items-center justify-center" style={{ backgroundColor: "rgba(var(--accent-rgb), 0.15)" }}>
+                    <CheckCircle2 className="w-3 h-3" style={{ color: "var(--accent)" }} />
                   </div>
                   <div>
                     <p className="text-[11px] font-bold text-white leading-tight">Obby Captured It</p>
-                    <p className="text-[10px]" style={{ color: "#CCFF33" }}>Tagged: EMERGENCY</p>
+                    <p className="text-[10px]" style={{ color: "var(--accent)" }}>Tagged: EMERGENCY</p>
                   </div>
                 </div>
                 <p className="text-[10px] text-gray-400 mb-1.5 leading-tight">SMS sent to owner + review follow-up scheduled</p>
@@ -155,15 +155,15 @@ export default function HeroSection() {
             {/* Floating: Obby captured */}
             <div
               className="absolute -right-8 bottom-28 rounded-xl shadow-xl p-4 w-60 border"
-              style={{ backgroundColor: "#17191E", borderColor: "rgba(204,255,51,0.3)" }}
+              style={{ backgroundColor: "#17191E", borderColor: "rgba(var(--accent-rgb), 0.3)" }}
             >
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-9 h-9 rounded-full flex items-center justify-center" style={{ backgroundColor: "rgba(204,255,51,0.15)" }}>
-                  <CheckCircle2 className="w-4 h-4" style={{ color: "#CCFF33" }} />
+                <div className="w-9 h-9 rounded-full flex items-center justify-center" style={{ backgroundColor: "rgba(var(--accent-rgb), 0.15)" }}>
+                  <CheckCircle2 className="w-4 h-4" style={{ color: "var(--accent)" }} />
                 </div>
                 <div>
                   <p className="text-xs font-bold text-white">Obby Captured It</p>
-                  <p className="text-xs" style={{ color: "#CCFF33" }}>Tagged: EMERGENCY</p>
+                  <p className="text-xs" style={{ color: "var(--accent)" }}>Tagged: EMERGENCY</p>
                 </div>
               </div>
               <p className="text-xs text-gray-400 mb-2">SMS sent to owner + review follow-up scheduled</p>

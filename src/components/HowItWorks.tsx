@@ -34,16 +34,14 @@ const steps = [
   {
     icon: Star,
     step: "05",
-    title: "We follow up finished jobs for 5‑star Google reviews",
-    desc: "After a job, you text us the customer's name and number. We check if they're happy, send your Google review link, and follow up with a couple of polite reminders. You keep fixing systems. We handle the follow‑up.",
+    title: "We follow up finished jobs for 5-star Google reviews",
+    desc: "After a job, you text us the customer's name and number. We check if they're happy, send your Google review link, and follow up with a couple of polite reminders. You keep fixing systems. We handle the follow-up.",
   },
 ];
 
-
-
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 bg-white">
+    <section id="how-it-works" className="py-20" style={{ backgroundColor: "var(--background)" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center max-w-2xl mx-auto mb-14"
@@ -53,10 +51,15 @@ export default function HowItWorks() {
           transition={{ duration: 0.5 }}
         >
           <div className="section-badge">How It Works</div>
-          <h2 className="text-3xl sm:text-4xl font-black text-black mb-4 leading-tight" style={{ letterSpacing: "-0.02em" }}>
+
+          <h2
+            className="text-3xl sm:text-4xl font-black mb-4 leading-tight"
+            style={{ color: "var(--foreground)", letterSpacing: "-0.02em" }}
+          >
             How HVAC Front Desk System Works
           </h2>
-          <p className="text-gray-500 text-lg">
+
+          <p className="text-lg" style={{ color: "var(--gray-text)" }}>
             We handle all the setup. You just show up for the 10-minute call.
           </p>
         </motion.div>
@@ -74,19 +77,39 @@ export default function HowItWorks() {
               <motion.div
                 key={step.step}
                 variants={fadeUp}
-                className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-gray-200 hover:shadow-lg transition-shadow"
+                className="rounded-2xl p-6 border transition-shadow hover:shadow-lg"
+                style={{
+                  backgroundColor: "var(--background)",
+                  borderColor: "rgba(0,0,0,0.06)",
+                }}
               >
-                <span className="text-xs font-black tracking-widest mb-4 block text-gray-300">
+                <span
+                  className="text-xs font-black tracking-widest mb-4 block"
+                  style={{ color: "rgba(0,0,0,0.22)" }}
+                >
                   STEP {step.step}
                 </span>
+
                 <div
                   className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
-                  style={{ backgroundColor: "#CCFF33" }}
+                  style={{ backgroundColor: "var(--accent)" }}
                 >
                   <Icon className="w-5 h-5 text-black" />
                 </div>
-                <h3 className="font-extrabold text-black mb-2 leading-snug text-sm">{step.title}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed">{step.desc}</p>
+
+                <h3
+                  className="font-extrabold mb-2 leading-snug text-sm"
+                  style={{ color: "var(--foreground)" }}
+                >
+                  {step.title}
+                </h3>
+
+                <p
+                  className="text-xs leading-relaxed"
+                  style={{ color: "var(--gray-text)" }}
+                >
+                  {step.desc}
+                </p>
               </motion.div>
             );
           })}
@@ -94,7 +117,7 @@ export default function HowItWorks() {
 
         <motion.div
           className="rounded-2xl overflow-hidden"
-          style={{ backgroundColor: "#17191E" }}
+          style={{ backgroundColor: "var(--dark)" }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -102,11 +125,17 @@ export default function HowItWorks() {
         >
           <div className="flex flex-col sm:flex-row items-center justify-between px-8 py-7 gap-4">
             <div>
-              <p className="text-white font-black text-xl mb-1" style={{ letterSpacing: "-0.02em" }}>
+              <p
+                className="font-black text-xl mb-1"
+                style={{ color: "#ffffff", letterSpacing: "-0.02em" }}
+              >
                 Setup takes 10–15 minutes.
               </p>
-              <p className="text-gray-400 text-sm">You're live the same day.</p>
+              <p className="text-sm" style={{ color: "rgba(255,255,255,0.6)" }}>
+                You're live the same day.
+              </p>
             </div>
+
             <a href="#booking-form" className="btn-primary px-6 py-3 rounded-lg font-black whitespace-nowrap shrink-0">
               <Phone className="w-4 h-4" />
               Book Setup Call

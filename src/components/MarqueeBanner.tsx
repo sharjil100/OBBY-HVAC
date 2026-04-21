@@ -32,7 +32,7 @@ const Row = ({ reverse = false }: { reverse?: boolean }) => {
 
 export default function MarqueeBanner() {
   return (
-    <div style={{ backgroundColor: "#CCFF33" }} className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden" style={{ backgroundColor: "var(--accent)" }}>
       <Row />
       <Row reverse />
     </div>

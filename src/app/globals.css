@@ -4,10 +4,39 @@
   --background: #ffffff;
   --foreground: #070711;
   --accent: #CCFF33;
+  --accent-rgb: 204, 255, 51;
   --accent-hover: #BAF800;
   --dark: #17191E;
   --dark-mid: #0B0B11;
   --gray-text: #858E97;
+
+  /* Navbar */
+  --nav-bg: #ffffff;
+  --nav-border: #F3F4F6;
+  --nav-link: #6B7280;
+  --nav-link-hover: #070711;
+  --nav-logo: #000000;
+  --nav-mobile-bg: rgba(255, 255, 255, 0.65);
+  --nav-mobile-link: #1f2937;
+  --nav-mobile-divider: rgba(0, 0, 0, 0.05);
+  --nav-hamburger: #4B5563;
+}
+
+[data-theme="gold"] {
+  --accent: #F5A623;
+  --accent-rgb: 245, 166, 35;
+  --accent-hover: #E89500;
+
+  /* Navbar */
+  --nav-bg: #000000;
+  --nav-border: #1f1f1f;
+  --nav-link: #9ca3af;
+  --nav-link-hover: #ffffff;
+  --nav-logo: #ffffff;
+  --nav-mobile-bg: rgba(0, 0, 0, 0.97);
+  --nav-mobile-link: #ffffff;
+  --nav-mobile-divider: rgba(255, 255, 255, 0.08);
+  --nav-hamburger: #9ca3af;
 }
 
 @theme inline {
@@ -28,7 +57,28 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Lime CTA — dark text on bright lime */
+/* Navbar themed classes */
+.nav-link {
+  color: var(--nav-link);
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: var(--nav-link-hover);
+}
+.nav-mobile-link {
+  color: var(--nav-mobile-link);
+  display: block;
+  padding: 12px 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--nav-mobile-divider);
+}
+
+/* Lime CTA — dark text on accent */
 .btn-primary {
   background-color: var(--accent);
   color: #000000;
@@ -48,7 +98,7 @@ html {
 .btn-primary:hover {
   background-color: var(--accent-hover);
   transform: translateY(-1px);
-  box-shadow: 0 8px 25px rgba(204, 255, 51, 0.35);
+  box-shadow: 0 8px 25px rgba(var(--accent-rgb), 0.35);
 }
 
 /* Dark/ghost secondary */
@@ -103,7 +153,7 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(204,255,51,0.15);
+  background: rgba(var(--accent-rgb), 0.15);
   color: #070711;
   font-size: 0.75rem;
   font-weight: 700;
@@ -111,6 +161,6 @@ html {
   letter-spacing: 0.08em;
   padding: 6px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(204,255,51,0.4);
+  border: 1px solid rgba(var(--accent-rgb), 0.4);
   margin-bottom: 16px;
 }

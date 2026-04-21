@@ -27,11 +27,9 @@ const testimonials = [
   },
 ];
 
-
-
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20" style={{ backgroundColor: "var(--background)" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center max-w-2xl mx-auto mb-14"
@@ -41,10 +39,20 @@ export default function Testimonials() {
           transition={{ duration: 0.5 }}
         >
           <div className="section-badge">Results & Proof</div>
-          <h2 className="text-3xl sm:text-4xl font-black text-black mb-4 leading-tight" style={{ letterSpacing: "-0.02em" }}>
+
+          <h2
+            className="text-3xl sm:text-4xl font-black mb-4 leading-tight"
+            style={{ color: "var(--foreground)", letterSpacing: "-0.02em" }}
+          >
             What HVAC owners say
           </h2>
-          <p className="text-gray-400 text-sm">(Replace with real quotes and screenshots as you get them.)</p>
+
+          <p
+            className="text-sm"
+            style={{ color: "rgba(0,0,0,0.4)" }}
+          >
+            (Replace with real quotes and screenshots as you get them.)
+          </p>
         </motion.div>
 
         <motion.div
@@ -58,33 +66,75 @@ export default function Testimonials() {
             <motion.div
               key={idx}
               variants={fadeUp}
-              className="rounded-2xl p-8 border border-gray-100 relative hover:shadow-md transition-shadow"
+              className="rounded-2xl p-8 border relative hover:shadow-md transition-shadow"
+              style={{
+                backgroundColor: "var(--background)",
+                borderColor: "rgba(0,0,0,0.06)",
+              }}
             >
-              <Quote className="absolute top-6 right-6 w-10 h-10 opacity-5 text-black" />
+              <Quote
+                className="absolute top-6 right-6 w-10 h-10"
+                style={{ color: "rgba(0,0,0,0.05)" }}
+              />
+
               <div className="flex gap-1 mb-4">
                 {[...Array(t.stars)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
+
               <div
                 className="inline-flex items-center gap-2 text-xs font-black px-3 py-1.5 rounded-full mb-5"
-                style={{ backgroundColor: "#CCFF33", color: "#000" }}
+                style={{
+                  backgroundColor: "var(--accent)",
+                  color: "#000000",
+                }}
               >
                 ✓ {t.highlight}
               </div>
-              <p className="text-gray-700 leading-relaxed mb-6 text-[15px]">"{t.quote}"</p>
-              <div className="flex items-center gap-3 pt-4 border-t border-gray-50">
-                <img src={t.avatar} alt={t.name} className="w-11 h-11 rounded-full object-cover border-2 border-gray-100" />
+
+              <p
+                className="leading-relaxed mb-6 text-[15px]"
+                style={{ color: "rgba(0,0,0,0.72)" }}
+              >
+                "{t.quote}"
+              </p>
+
+              <div
+                className="flex items-center gap-3 pt-4 border-t"
+                style={{ borderTopColor: "rgba(0,0,0,0.04)" }}
+              >
+                <img
+                  src={t.avatar}
+                  alt={t.name}
+                  className="w-11 h-11 rounded-full object-cover border-2"
+                  style={{ borderColor: "rgba(0,0,0,0.06)" }}
+                />
+
                 <div>
-                  <p className="font-extrabold text-black text-sm">{t.name}</p>
-                  <p className="text-xs text-gray-500">{t.company}</p>
-                  <p className="text-xs text-gray-400">{t.role}</p>
+                  <p
+                    className="font-extrabold text-sm"
+                    style={{ color: "var(--foreground)" }}
+                  >
+                    {t.name}
+                  </p>
+                  <p
+                    className="text-xs"
+                    style={{ color: "var(--gray-text)" }}
+                  >
+                    {t.company}
+                  </p>
+                  <p
+                    className="text-xs"
+                    style={{ color: "rgba(0,0,0,0.4)" }}
+                  >
+                    {t.role}
+                  </p>
                 </div>
               </div>
             </motion.div>
           ))}
         </motion.div>
-
       </div>
     </section>
   );
