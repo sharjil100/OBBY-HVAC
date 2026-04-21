@@ -72,12 +72,13 @@ export default function HeroSection() {
 
           {/* Mobile/tablet hero image */}
           <div className="block lg:hidden">
-            <div className="rounded-2xl overflow-hidden shadow-xl w-full">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl w-full">
               <img
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=85&fit=crop"
-                alt="HVAC technician working on rooftop unit"
+                src="/hero-mobile.png"
+                alt="HVAC technician on a service call"
                 className="w-full h-64 sm:h-72 object-cover"
               />
+              <div className="absolute inset-0 bg-black/25 pointer-events-none" />
             </div>
 
             {/* Cards flush below image */}
@@ -128,11 +129,12 @@ export default function HeroSection() {
           <div className="relative hidden lg:flex items-center justify-center h-full">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full">
               <img
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=85&fit=crop"
-                alt="HVAC technician working on rooftop unit"
+                src="/hero-desktop.png"
+                alt="HVAC technician on a service call"
                 className="w-full h-[580px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/50" />
+              <div className="absolute inset-0 bg-black/25 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40 pointer-events-none" />
             </div>
 
             {/* Floating: Missed call */}

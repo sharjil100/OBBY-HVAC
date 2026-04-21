@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { PhoneOff, Thermometer, Clock, Star } from "lucide-react";
 
 const painPoints = [
@@ -23,24 +22,6 @@ const painPoints = [
 ];
 
 export default function WhoItIsFor() {
-  const [isGold, setIsGold] = useState(false);
-
-  useEffect(() => {
-    const checkTheme = () => {
-      setIsGold(document.documentElement.getAttribute("data-theme") === "gold");
-    };
-
-    checkTheme();
-
-    const observer = new MutationObserver(checkTheme);
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["data-theme"],
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section
       className="py-20"
@@ -51,8 +32,8 @@ export default function WhoItIsFor() {
           <div className="relative order-2 lg:order-1">
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=85&fit=crop"
-                alt="HVAC technician working in tight space"
+                src="/who-this-is-for.png"
+                alt="HVAC technician working in a tight crawlspace"
                 className="w-full h-[480px] object-cover"
               />
             </div>
@@ -60,12 +41,8 @@ export default function WhoItIsFor() {
             <div
               className="absolute bottom-6 left-6 right-6 backdrop-blur-sm rounded-xl p-4 shadow-lg border"
               style={{
-                backgroundColor: isGold
-                  ? "rgba(0, 0, 0, 0.92)"
-                  : "rgba(255, 255, 255, 0.95)",
-                borderColor: isGold
-                  ? "rgba(255, 255, 255, 0.08)"
-                  : "rgba(0, 0, 0, 0.06)",
+                backgroundColor: "rgba(255, 255, 255, 0.95)",
+                borderColor: "rgba(0, 0, 0, 0.06)",
               }}
             >
               <div className="flex items-center gap-3">

@@ -6,17 +6,12 @@ import { Phone, Menu, X } from "lucide-react";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isGold, setIsGold] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", isGold ? "gold" : "");
-  }, [isGold]);
 
   const navLinks = [
     { label: "How It Works", href: "#how-it-works" },
@@ -54,37 +49,18 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Right: theme toggle + CTA */}
+          {/* Right: CTA */}
           <div className="hidden md:flex items-center gap-3">
-            {/* Theme toggle */}
-            <button
-              onClick={() => setIsGold(!isGold)}
-              title={isGold ? "Switch to Lime theme" : "Switch to Gold theme"}
-              className="w-7 h-7 rounded-full border-2 transition-all duration-300 hover:scale-110 focus:outline-none"
-              style={{
-                backgroundColor: isGold ? "#CCFF33" : "#FFBF4D",
-                borderColor: isGold ? "rgba(204,255,51,0.4)" : "rgba(255,191,77,0.4)",
-              }}
-            />
             <a href="#booking-form" className="btn-primary text-sm px-5 py-2.5 rounded-lg">
               <Phone className="w-4 h-4" />
               Book Setup Call
             </a>
           </div>
 
-          {/* Mobile: theme toggle + hamburger */}
+          {/* Mobile: hamburger */}
           <div className="md:hidden flex items-center gap-2">
             <button
-              onClick={() => setIsGold(!isGold)}
-              title={isGold ? "Switch to Lime theme" : "Switch to Gold theme"}
-              className="w-6 h-6 rounded-full border-2 transition-all duration-300 hover:scale-110 focus:outline-none"
-              style={{
-                backgroundColor: isGold ? "#CCFF33" : "#FFBF4D",
-                borderColor: isGold ? "rgba(204,255,51,0.4)" : "rgba(255,191,77,0.4)",
-              }}
-            />
-            <button
-              className="p-2 rounded-lg hover:bg-black/5 transition-colors"
+              className="p-2 rounded-lg hover:bg-white/5 transition-colors"
               style={{ color: "var(--nav-hamburger)" }}
               onClick={() => setMenuOpen(!menuOpen)}
             >

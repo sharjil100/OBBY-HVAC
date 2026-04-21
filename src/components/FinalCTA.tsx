@@ -85,13 +85,14 @@ export default function FinalCTA() {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=85&fit=crop"
-                alt="Successful HVAC team"
+                src="/call-to-action.png"
+                alt="HVAC team after a successful install"
                 className="w-full h-[460px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-black/25 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
             </div>
 
             <div

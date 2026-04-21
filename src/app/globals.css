@@ -3,29 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #070711;
-  --accent: #CCFF33;
-  --accent-rgb: 204, 255, 51;
-  --accent-hover: #BAF800;
-  --dark: #17191E;
-  --dark-mid: #0B0B11;
-  --gray-text: #858E97;
-
-  /* Navbar */
-  --nav-bg: #ffffff;
-  --nav-border: #F3F4F6;
-  --nav-link: #6B7280;
-  --nav-link-hover: #070711;
-  --nav-logo: #000000;
-  --nav-mobile-bg: rgba(255, 255, 255, 0.65);
-  --nav-mobile-link: #1f2937;
-  --nav-mobile-divider: rgba(0, 0, 0, 0.05);
-  --nav-hamburger: #4B5563;
-}
-
-[data-theme="gold"] {
   --accent: #FFBF4D;
   --accent-rgb: 255, 191, 77;
   --accent-hover: #F5A623;
+  --dark: #17191E;
+  --dark-mid: #0B0B11;
+  --gray-text: #858E97;
 
   /* Navbar */
   --nav-bg: #000000;
