@@ -30,7 +30,7 @@ export default function FAQSection() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-20" style={{ backgroundColor: "var(--background)" }}>
+    <section id="faq" className="py-20" style={{ backgroundColor: "#FAFAFA" }}>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <div className="section-badge">FAQ</div>
