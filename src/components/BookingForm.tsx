@@ -107,7 +107,7 @@ export default function BookingForm() {
           {[
             { label: "Your Name *", type: "text", key: "name", placeholder: "Mike Johnson", required: true },
             { label: "Phone Number *", type: "tel", key: "phone", placeholder: "(555) 555-5555", required: true },
-            { label: "Company Name *", type: "text", key: "company", placeholder: "Johnson HVAC LLC", required: true },
+            { label: "Company Name *", type: "text", key: "company", placeholder: "Johnson Plumbing LLC", required: true },
             { label: "Service Area", type: "text", key: "area", placeholder: "Dallas, TX", required: false },
           ].map(({ label, type, key, placeholder, required }) => (
             <div key={key}>

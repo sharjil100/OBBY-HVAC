@@ -7,14 +7,15 @@ import { fadeUp, stagger } from "@/lib/animations";
 const BENEFITS_STAGGER = stagger(0.08);
 
 const benefits = [
-  { icon: PhoneIncoming, title: "More $300–$800 service calls booked", desc: "Instead of lost to voicemail — every missed call gets a second chance." },
-  { icon: Wrench, title: "More $8k–$30k changeouts and installs", desc: "Because hot leads actually get handled before they call your competitor." },
-  { icon: Zap, title: "True emergencies flagged", desc: `So you don't miss "no heat / no AC" money calls. You know what's urgent first.` },
-  { icon: ThumbsUp, title: `Fewer angry reviews`, desc: `Fewer "no one answered the phone" 1-stars. We prevent the frustration before it happens.` },
-  { icon: Star, title: "A steady flow of 5-star Google reviews", desc: "From happy customers — automated follow-up while the job is still fresh." },
-  { icon: Moon, title: "After-hours and weekend calls caught", desc: "Logged instead of disappearing. Emergency? You get notified immediately." },
-  { icon: Shield, title: "Junk vendors and spam filtered", desc: "Away from your main attention. You only hear about real customers with real jobs." },
-  { icon: FileText, title: "A simple log", desc: "So you can see what's happening without learning a new platform." },
+  { icon: PhoneIncoming, title: "More $150–$600 service calls booked", desc: "Instead of missed voicemails — every missed call gets a second chance." },
+  { icon: Wrench, title: "More $500–$3,000 repair jobs actually booked", desc: "Because hot leads get handled before they call your competitor." },
+  { icon: Wrench, title: "More $3k–$15k+ installs and big jobs captured", desc: "Repipes, sewer lines, and water heater installs that would've gone elsewhere." },
+  { icon: Zap, title: "Emergency calls flagged", desc: `So you don't miss high-value work. Active leaks, sewer backups, and no hot water get tagged first.` },
+  { icon: ThumbsUp, title: `Fewer "no one answered" reviews`, desc: `We catch the call before the frustration turns into a 1-star.` },
+  { icon: Star, title: "Consistent 5-star Google reviews", desc: "From real customers — automated follow-up while the job is still fresh." },
+  { icon: Moon, title: "After-hours calls captured", desc: "Logged instead of lost. Emergency? You get notified immediately." },
+  { icon: Shield, title: "Spam and vendors filtered out", desc: "You only hear about real customers with real jobs." },
+  { icon: FileText, title: "Simple call log", desc: "No complicated software. See what's happening at a glance." },
 ];
 
 export default function WhatYouGet() {
@@ -33,7 +34,7 @@ export default function WhatYouGet() {
             className="text-3xl sm:text-4xl font-black mb-4 leading-tight"
             style={{ color: "var(--foreground)", letterSpacing: "-0.02em" }}
           >
-            With the HVAC Front Desk System you get:
+            With the Plumbing Front Desk System you get:
           </h2>
         </motion.div>
 

@@ -10,20 +10,20 @@ const testimonials = [
   {
     name: "[Name]",
     company: "[Company]",
-    role: "HVAC Owner",
-    quote: "During the first heat wave, we used to drown in missed calls. Now every 'no AC' call gets logged and flagged. We just work down the list.",
+    role: "Plumbing Owner",
+    quote: "Before this, missed calls were just gone. Now every leak and backup gets logged and we call them back fast.",
     stars: 5,
     avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&crop=face",
-    highlight: "No more drowning in missed calls",
+    highlight: "No more lost leaks and backups",
   },
   {
     name: "[Name]",
     company: "[Company]",
-    role: "HVAC Owner",
-    quote: "We didn't change anything in the field. The only difference was someone finally following up for reviews. Our Google rating and call volume both went up.",
+    role: "Plumbing Owner",
+    quote: "We didn't change our work at all. Just started getting more reviews and more calls from Google.",
     stars: 5,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
-    highlight: "Google rating and call volume both went up",
+    highlight: "More reviews and more Google calls",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function Testimonials() {
             className="text-3xl sm:text-4xl font-black mb-4 leading-tight"
             style={{ color: "var(--foreground)", letterSpacing: "-0.02em" }}
           >
-            What HVAC owners say
+            What plumbing owners say
           </h2>
 
           <p

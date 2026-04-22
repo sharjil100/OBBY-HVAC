@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Terms of Service – Obby",
   description:
-    "The terms that govern your use of the Obby website and the HVAC Front Desk System.",
+    "The terms that govern your use of the Obby website and the Plumbing Front Desk System.",
 };
 
 export default function TermsOfServicePage() {
@@ -30,7 +30,7 @@ export default function TermsOfServicePage() {
           <div className="mb-10 space-y-4 text-[15px] leading-relaxed" style={{ color: "var(--gray-text)" }}>
             <p>
               Welcome to Obby. These Terms of Service (&ldquo;Terms&rdquo;) govern your access to
-              and use of our website, the HVAC Front Desk System, and any related services
+              and use of our website, the Plumbing Front Desk System, and any related services
               (together, the &ldquo;Services&rdquo;) provided by Obby (&ldquo;Obby,&rdquo;
               &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). By using the Services, you
               agree to these Terms. If you do not agree, please do not use the Services.
@@ -41,13 +41,13 @@ export default function TermsOfServicePage() {
             <p>
               You must be at least 18 years old to use Obby. By agreeing to these Terms, you
               confirm that you are 18 or older and have the legal authority to enter into an
-              agreement on behalf of your HVAC business.
+              agreement on behalf of your plumbing business.
             </p>
           </Section>
 
           <Section title="2. The services we provide">
             <p>
-              Obby provides an HVAC Front Desk System that includes, but is not limited to:
+              Obby provides an Plumbing Front Desk System that includes, but is not limited to:
             </p>
             <List
               items={[
@@ -135,7 +135,7 @@ export default function TermsOfServicePage() {
             <p>
               The Obby brand, website, software, call scripts, and all associated materials are
               owned by Obby and protected by copyright, trademark, and other laws. You are granted
-              a limited, revocable license to use the Services for your HVAC business. You may not
+              a limited, revocable license to use the Services for your plumbing business. You may not
               copy, resell, or republish our materials without written permission.
             </p>
           </Section>

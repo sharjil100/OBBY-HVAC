@@ -1,23 +1,23 @@
 "use client";
 
-import { PhoneOff, Thermometer, Clock, Star } from "lucide-react";
+import { PhoneOff, Droplet, Clock, Star } from "lucide-react";
 
 const painPoints = [
   {
-    icon: Thermometer,
-    text: "Your techs are on roofs or in crawlspaces when the phones blow up",
+    icon: Droplet,
+    text: "Your techs are under sinks, in basements, or driving when the phone rings",
   },
   {
     icon: PhoneOff,
-    text: "Calls roll to voicemail or ring out because nobody's free",
+    text: "Calls go to voicemail because no one's free to pick up with wet hands or tools out",
   },
   {
     icon: Clock,
-    text: "Homeowners with no heat / no AC don't wait for a call back",
+    text: "Customers with leaks or backups don't wait around",
   },
   {
     icon: Star,
-    text: "You know reviews drive Google and LSA, but no one has time to chase them",
+    text: "You know reviews drive Google and LSA, but no one follows up",
   },
 ];
 
@@ -32,8 +32,8 @@ export default function WhoItIsFor() {
           <div className="relative order-2 lg:order-1">
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/who-this-is-for.png"
-                alt="HVAC technician working in a tight crawlspace"
+                src="/who-this-is-for-plumbing.png"
+                alt="Plumber working under a sink"
                 className="w-full h-[480px] object-cover"
               />
             </div>
@@ -63,7 +63,7 @@ export default function WhoItIsFor() {
                     className="text-xs mt-0.5"
                     style={{ color: "var(--gray-text)" }}
                   >
-                    The average HVAC shop misses 12 calls on a busy day
+                    The average plumbing shop misses 12 calls on a busy day
                   </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function WhoItIsFor() {
               className="text-3xl sm:text-4xl font-black mb-4 leading-tight"
               style={{ color: "var(--foreground)", letterSpacing: "-0.02em" }}
             >
-              Built for busy HVAC shops,{" "}
+              Built for busy plumbing shops,{" "}
               <span
                 style={{
                   textDecoration: "underline",
@@ -134,7 +134,7 @@ export default function WhoItIsFor() {
                 className="font-extrabold text-sm"
                 style={{ color: "var(--foreground)" }}
               >
-                If that sounds like your world, the HVAC Front Desk System is for you.
+                If that sounds like your day-to-day, the Plumbing Front Desk System is for you.
               </p>
             </div>
           </div>

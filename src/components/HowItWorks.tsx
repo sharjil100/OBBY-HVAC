@@ -11,31 +11,31 @@ const steps = [
     icon: Phone,
     step: "01",
     title: "We plug in a smart number",
-    desc: "On a quick 10–15 minute Zoom, we give you a new number and swap it into your Google Business Profile and, if you want, your website header. It still rings your office line or main cell first.",
+    desc: "On a quick 10–15 minute call, we give you a new number and connect it to your Google listing and site. It still rings your phone first.",
   },
   {
     icon: PhoneIncoming,
     step: "02",
     title: "When you miss a call, we catch it",
-    desc: "If you don't pick up in time or you're closed, our front desk answers as your company and asks a few quick questions: name, callback number, ZIP, new or existing customer, what's going on, and how urgent.",
+    desc: `If you don't answer or you're closed, we step in as your office and ask: name, best callback number, ZIP, new or existing customer, what's going on ("leak," "clog," "no hot water," "backup," "install quote"), and how urgent.`,
   },
   {
     icon: AlertTriangle,
     step: "03",
-    title: "We separate emergencies from routine calls",
-    desc: `Emergency "no heat / no AC" calls get flagged so you can jump on them first. Routine maintenance and quotes are tagged but don't blow up your phone.`,
+    title: "We flag emergencies",
+    desc: "Urgent calls like active leaks, sewer backups, and no water / no hot water get tagged so you can jump on them first.",
   },
   {
     icon: MessageSquare,
     step: "04",
-    title: "You get a clean summary for every real job",
-    desc: "We text you a short summary and keep a simple call log with recordings: who called, what they need, how hot it is (emergency / soon / just looking). Decide in seconds who to call back first.",
+    title: "You get a clean summary",
+    desc: "We text you a quick breakdown: who called, what they need, and how urgent it is — so you can decide in seconds who to call back and where to send a tech.",
   },
   {
     icon: Star,
     step: "05",
-    title: "We follow up finished jobs for 5-star Google reviews",
-    desc: "After a job, you text us the customer's name and number. We check if they're happy, send your Google review link, and follow up with a couple of polite reminders. You keep fixing systems. We handle the follow-up.",
+    title: "We follow up for 5-star reviews",
+    desc: "After a job, you send us the customer info. We check if they're satisfied, send your Google review link, and follow up with simple reminders. You do the work. We grow your reputation.",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function HowItWorks() {
             className="text-3xl sm:text-4xl font-black mb-4 leading-tight"
             style={{ color: "var(--foreground)", letterSpacing: "-0.02em" }}
           >
-            How HVAC Front Desk System Works
+            How Plumbing Front Desk System Works
           </h2>
 
           <p className="text-lg" style={{ color: "var(--gray-text)" }}>

@@ -9,20 +9,20 @@ const REASONS_STAGGER = stagger(0.12);
 const reasons = [
   {
     icon: Users,
-    title: "We don't replace your people.",
-    desc: "Your phone still rings you first. We only step in when you miss the call or you're closed.",
-    contrast: "vs. Hiring a call center that handles everything and loses the personal touch",
+    title: "We don't replace your phone.",
+    desc: "It still rings you first. We only step in when you miss a call or you're closed.",
+    contrast: "vs. Call centers that handle everything and lose the personal touch",
   },
   {
     icon: MessageCircle,
-    title: "Short, human calls.",
-    desc: "We're not running a long script. We grab the basics and get out of the way so you can close the job.",
+    title: "Short, human conversations.",
+    desc: "No long scripts. We grab the basics and get out of the way so you can close the job.",
     contrast: "vs. Phone trees and hold music that make customers hang up",
   },
   {
     icon: Wrench,
-    title: "Built for HVAC, not every business.",
-    desc: `We know the difference between "no heat," "AC not cooling," tune-ups, and quotes – and we tag calls that way.`,
+    title: "Built specifically for plumbing.",
+    desc: "We know the difference between leaks, clogs, backups, and installs — and we tag calls that way.",
     contrast: "vs. Generic answering services that treat all calls the same",
   },
 ];
@@ -51,7 +51,7 @@ export default function WhyDifferent() {
             className="text-lg"
             style={{ color: "var(--gray-text)" }}
           >
-            We built Obby for HVAC specifically. That changes everything.
+            We built Obby for plumbing specifically. That changes everything.
           </p>
         </motion.div>
 

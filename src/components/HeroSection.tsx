@@ -10,7 +10,7 @@ const trustBadges = [
 ];
 
 const stats = [
-  { value: "$8k–$30k", label: "Jobs lost to voicemail" },
+  { value: "$3k–$15k+", label: "Jobs lost to voicemail" },
   { value: "72%", label: "Callers skip voicemail" },
   { value: "5 min", label: "Response time needed" },
 ];
@@ -24,7 +24,7 @@ export default function HeroSection() {
           <div className="relative z-10 py-12 lg:py-0 flex flex-col sm:items-center lg:items-start sm:text-center lg:text-left">
             <div className="section-badge">
               <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
-              Trusted by HVAC shops across the US
+              Trusted by plumbing shops across the US
             </div>
 
             <h1
@@ -36,15 +36,15 @@ export default function HeroSection() {
                 className="relative inline-block px-2 rounded-md"
                 style={{ backgroundColor: "var(--accent)" }}
               >
-                $8k–$30k
+                $150–$3,000
               </span>{" "}
-              HVAC Jobs Every Time The Phone Rings On A Roof
+              Plumbing Jobs Every Time You Miss A Call
             </h1>
 
             <p className="text-lg text-gray-500 leading-relaxed mb-8 max-w-xl">
-              We catch the calls your techs miss during heat waves and cold snaps, tag true
-              emergencies, and turn happy service calls into 5‑star Google reviews – all for one
-              flat monthly fee.
+              We catch the calls your techs miss on jobs, tag true emergencies like leaks and
+              backups, and turn completed work into 5‑star Google reviews — all for one flat
+              monthly fee.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-4 sm:justify-center lg:justify-start">
@@ -74,8 +74,8 @@ export default function HeroSection() {
           <div className="block lg:hidden">
             <div className="relative rounded-2xl overflow-hidden shadow-xl w-full">
               <img
-                src="/hero-mobile.png"
-                alt="HVAC technician on a service call"
+                src="/hero-mobile-plumbing.png"
+                alt="Plumber on a service call"
                 className="w-full h-64 sm:h-72 object-cover"
               />
               <div className="absolute inset-0 bg-black/25 pointer-events-none" />
@@ -95,8 +95,8 @@ export default function HeroSection() {
                   </div>
                 </div>
                 <div className="bg-red-50 rounded-lg p-1.5">
-                  <p className="text-[10px] text-red-700 font-semibold leading-tight">🔥 Emergency – AC out in July heat</p>
-                  <p className="text-[10px] text-red-400 mt-0.5">Potential $12,400 install</p>
+                  <p className="text-[10px] text-red-700 font-semibold leading-tight">🚨 Emergency – Sewer backup flooding basement</p>
+                  <p className="text-[10px] text-red-400 mt-0.5">Potential $8,500 sewer line</p>
                 </div>
               </div>
 
@@ -129,8 +129,8 @@ export default function HeroSection() {
           <div className="relative hidden lg:flex items-center justify-center h-full">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full">
               <img
-                src="/hero-desktop.png"
-                alt="HVAC technician on a service call"
+                src="/hero-desktop-plumbing.png"
+                alt="Plumber on a service call"
                 className="w-full h-[580px] object-cover"
               />
               <div className="absolute inset-0 bg-black/25 pointer-events-none" />
@@ -149,8 +149,8 @@ export default function HeroSection() {
                 </div>
               </div>
               <div className="bg-red-50 rounded-lg p-2.5">
-                <p className="text-xs text-red-700 font-semibold">🔥 Emergency – AC out in July heat</p>
-                <p className="text-xs text-red-400 mt-0.5">Potential $12,400 install</p>
+                <p className="text-xs text-red-700 font-semibold">🚨 Emergency – Sewer backup flooding basement</p>
+                <p className="text-xs text-red-400 mt-0.5">Potential $8,500 sewer line</p>
               </div>
             </div>
 

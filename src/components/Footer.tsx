@@ -53,7 +53,7 @@ export default function Footer() {
               className="text-sm leading-relaxed max-w-sm mb-5"
               style={{ color: "rgba(255,255,255,0.5)" }}
             >
-              Obby helps HVAC owner-operators and small shops capture missed calls, prioritize
+              Obby helps plumbing owner-operators and small shops capture missed calls, prioritize
               emergencies, and grow their Google reviews — all for one flat monthly fee.
             </p>
 
@@ -115,7 +115,7 @@ export default function Footer() {
 
             <div className="space-y-2.5">
               <span className="block text-sm" style={{ color: "rgba(255,255,255,0.5)" }}>
-                HVAC
+                Plumbing
               </span>
             </div>
           </div>

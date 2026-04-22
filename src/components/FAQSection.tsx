@@ -6,23 +6,23 @@ import { Plus, Minus } from "lucide-react";
 const faqs = [
   {
     q: "How fast can we be live?",
-    a: "Usually on the first 10–15 minute setup call.",
+    a: "Usually during the first 10–15 minute call.",
   },
   {
-    q: "Will this sound like a robot to my customers?",
-    a: "No. We answer as your office, keep it quick and clear, and our only job is to grab the basics so you can call them back.",
+    q: "Will this sound robotic?",
+    a: "No. We answer like a real office and keep it quick.",
   },
   {
-    q: "What if it's a middle-of-the-night emergency?",
-    a: "We still take the call, tag it as \"emergency,\" and send you the summary so you can decide how and when to respond.",
+    q: "What about emergencies?",
+    a: "We tag urgent calls — leaks, sewer backups, no water / no hot water — so you can prioritize them.",
   },
   {
-    q: "What about vendors and spam?",
-    a: "We separate homeowners from companies. Vendors get pointed to an email so your time and call log stay focused on real customers.",
+    q: "Do you filter spam and vendors?",
+    a: "Yes — only real customers reach your attention. Vendors get pointed to an email so your call log stays focused.",
   },
   {
-    q: "Is there a contract or setup fee?",
-    a: "No. It's $397/month, month-to-month. No setup fee. If you ever feel it isn't paying for itself, you can turn it off before the next billing.",
+    q: "Is there a contract?",
+    a: "No. $397/month. Cancel anytime.",
   },
 ];
 

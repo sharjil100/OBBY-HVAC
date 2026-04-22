@@ -36,8 +36,8 @@ export default function ProblemSection() {
             className="text-3xl sm:text-4xl font-black mb-4 leading-tight"
             style={{ color: "#ffffff", letterSpacing: "-0.02em" }}
           >
-            Voicemail is quietly killing{" "}
-            <span style={{ color: "var(--accent)" }}>your best jobs</span>
+            Missed calls are costing you{" "}
+            <span style={{ color: "var(--accent)" }}>real plumbing jobs</span>
           </h2>
         </motion.div>
 
@@ -48,7 +48,7 @@ export default function ProblemSection() {
           whileInView="show"
           viewport={{ once: true, margin: "-60px" }}
         >
-          {/* During a heat wave */}
+          {/* On a typical busy day */}
           <motion.div
             variants={fadeUp}
             className="rounded-2xl p-7 border"
@@ -61,14 +61,14 @@ export default function ProblemSection() {
               className="text-xs font-black uppercase tracking-widest mb-4"
               style={{ color: "var(--accent)" }}
             >
-              During a heat wave or cold snap
+              On a typical busy day
             </p>
 
             <div className="space-y-3">
               {[
-                { icon: "📞", text: "The phone rings nonstop" },
-                { icon: "🛠️", text: "Your techs are on ladders, in attics, or driving between calls" },
-                { icon: "📵", text: "Half the calls hit voicemail or get missed" },
+                { icon: "📞", text: "The phone rings while you're mid-job" },
+                { icon: "🔧", text: "You can't pick up with wet hands or tools out" },
+                { icon: "📵", text: "Calls go to voicemail or drop completely" },
               ].map(({ icon, text }, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <span className="text-base shrink-0 mt-0.5">{icon}</span>
@@ -101,9 +101,10 @@ export default function ProblemSection() {
 
             <div className="space-y-4">
               {[
-                { icon: DollarSign, value: "Lost $300–$800 service calls" },
-                { icon: TrendingDown, value: "Lost $8k–$30k changeouts and installs" },
-                { icon: ThumbsDown, value: `"We tried calling but no one answered" turning into 1-star reviews` },
+                { icon: DollarSign, value: "Lost $150–$600 service calls" },
+                { icon: TrendingDown, value: "Lost $500–$3,000 repair jobs" },
+                { icon: TrendingDown, value: "Lost $3k–$15k+ repipes, sewer lines, and water heaters" },
+                { icon: ThumbsDown, value: `"No one answered" turning into bad reviews` },
               ].map(({ icon: Icon, value }, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <div
@@ -141,9 +142,9 @@ export default function ProblemSection() {
 
             <div className="space-y-3">
               {[
-                { icon: Star, text: "You finish good jobs and nobody follows up for reviews" },
-                { icon: TrendingDown, text: "A few angry customers and old complaints drag down your rating" },
-                { icon: PhoneOff, text: "Competitors with better reviews and faster answer times win the work" },
+                { icon: Star, text: "Happy customers leave without leaving reviews" },
+                { icon: TrendingDown, text: "A few bad experiences drag down your rating" },
+                { icon: PhoneOff, text: "Competitors who answer faster win the work" },
               ].map(({ icon: Icon, text }, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <div

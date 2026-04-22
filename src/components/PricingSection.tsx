@@ -29,7 +29,7 @@ export default function PricingSection() {
           </h2>
 
           <p className="text-lg" style={{ color: "var(--gray-text)" }}>
-            The HVAC Front Desk System is $397 per month.
+            The Plumbing Front Desk System is $397 per month.
           </p>
         </div>
 
@@ -145,11 +145,11 @@ export default function PricingSection() {
                 className="text-xl font-black leading-tight mb-3"
                 style={{ color: "#000000", letterSpacing: "-0.02em" }}
               >
-                Catching just one extra changeout or install a year usually pays for years of the service.
+                Catching just one extra sewer job or water heater install can pay for months of service.
               </p>
 
               <p className="text-sm leading-relaxed" style={{ color: "rgba(0,0,0,0.72)" }}>
-                Even a couple of saved service calls per month can cover it.
+                Even a handful of saved service calls covers it.
               </p>
             </div>
 
@@ -161,11 +161,11 @@ export default function PricingSection() {
               }}
             >
               <p className="text-sm leading-relaxed mb-4" style={{ color: "rgba(0,0,0,0.6)" }}>
-                You don't hire another office person. You don't sit on hold with call centers.
+                No hiring. No training. No call center headaches.
               </p>
 
               <p className="text-sm font-extrabold leading-relaxed" style={{ color: "var(--foreground)" }}>
-                You get a front desk that only charges you about what you make on a basic service ticket each month.
+                Just a front desk that works when you can't.
               </p>
             </div>
           </div>

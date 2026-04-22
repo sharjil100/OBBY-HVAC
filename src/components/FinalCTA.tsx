@@ -28,7 +28,7 @@ export default function FinalCTA() {
                 className="w-1.5 h-1.5 rounded-full inline-block"
                 style={{ backgroundColor: "var(--accent)" }}
               />
-              Don&apos;t Let Another Season Go By
+              Don&apos;t Let Another Job Slip Away
             </div>
 
             <h2
@@ -36,16 +36,16 @@ export default function FinalCTA() {
               style={{ color: "#ffffff", letterSpacing: "-0.02em" }}
             >
               Ready to stop losing{" "}
-              <span style={{ color: "var(--accent)" }}>$8k–$30k</span>{" "}
-              HVAC jobs to voicemail?
+              <span style={{ color: "var(--accent)" }}>plumbing jobs</span>{" "}
+              to missed calls?
             </h2>
 
             <p
               className="text-lg leading-relaxed mb-8"
               style={{ color: "rgba(255,255,255,0.6)" }}
             >
-              We&apos;ll plug in your smart number, catch the calls you miss, flag emergencies, and
-              start turning finished jobs into 5-star reviews — in one short call.
+              We&apos;ll plug in your number, catch missed calls, flag emergencies, and start
+              turning completed jobs into 5-star reviews — in one short call.
             </p>
 
             <div className="space-y-3 mb-10">
@@ -87,8 +87,8 @@ export default function FinalCTA() {
           <div className="relative hidden lg:block">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/call-to-action.png"
-                alt="HVAC team after a successful install"
+                src="/call-to-action-plumbing.png"
+                alt="Plumbing team after a successful install"
                 className="w-full h-[460px] object-cover"
               />
               <div className="absolute inset-0 bg-black/25 pointer-events-none" />
@@ -106,7 +106,7 @@ export default function FinalCTA() {
                 $397 / month
               </p>
               <p className="text-xs" style={{ color: "rgba(0,0,0,0.6)" }}>
-                One install covers 20+ months
+                One sewer or water heater job covers months
               </p>
             </div>
           </div>

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Privacy Policy – Obby",
   description:
-    "How Obby collects, uses, and protects the information you share with us while using the HVAC Front Desk System.",
+    "How Obby collects, uses, and protects the information you share with us while using the Plumbing Front Desk System.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -46,8 +46,8 @@ export default function PrivacyPolicyPage() {
 
           <Section title="1. Information we collect">
             <p>
-              When you use the Obby website, book a setup call, or sign up for the HVAC Front Desk
-              System, we collect the information needed to answer your calls, alert you to
+              When you use the Obby website, book a setup call, or sign up for the Plumbing Front
+              Desk System, we collect the information needed to answer your calls, alert you to
               emergencies, and follow up for reviews.
             </p>
 
@@ -179,7 +179,7 @@ export default function PrivacyPolicyPage() {
               items={[
                 "Understand how visitors use the site",
                 "Improve website functionality and performance",
-                "Deliver relevant marketing to HVAC shops",
+                "Deliver relevant marketing to plumbing shops",
               ]}
             />
             <p>

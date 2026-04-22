@@ -9,10 +9,10 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Obby – Stop Losing HVAC Jobs to Voicemail",
+  title: "Obby – Stop Losing Plumbing Jobs to Missed Calls",
   description:
-    "Obby catches the calls your techs miss during heat waves and cold snaps, tags true emergencies, and turns happy service calls into 5-star Google reviews – all for one flat monthly fee.",
-  keywords: ["HVAC answering service", "HVAC call capture", "HVAC lead generation", "missed call recovery", "HVAC reviews"],
+    "Obby catches the calls your plumbing techs miss on jobs, tags true emergencies like leaks and backups, and turns completed work into 5-star Google reviews – all for one flat monthly fee.",
+  keywords: ["plumbing answering service", "plumbing call capture", "plumbing lead generation", "missed call recovery", "plumbing reviews"],
 };
 
 export default function RootLayout({
