@@ -24,16 +24,17 @@ export default function TermsOfServicePage() {
           </h1>
 
           <p className="text-sm mb-10" style={{ color: "var(--gray-text)" }}>
-            Effective Date: April 22, 2026
+            Effective Date: April 24, 2026
           </p>
 
           <div className="mb-10 space-y-4 text-[15px] leading-relaxed" style={{ color: "var(--gray-text)" }}>
             <p>
               Welcome to Obby. These Terms of Service (&ldquo;Terms&rdquo;) govern your access to
               and use of our website, the Plumbing Front Desk System, and any related services
-              (together, the &ldquo;Services&rdquo;) provided by Obby (&ldquo;Obby,&rdquo;
-              &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). By using the Services, you
-              agree to these Terms. If you do not agree, please do not use the Services.
+              (together, the &ldquo;Services&rdquo;) provided by Obby LLC (&ldquo;Obby,&rdquo;
+              &ldquo;Company,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). By
+              using the Services, you agree to these Terms. If you do not agree, please do not use
+              the Services.
             </p>
           </div>
 
@@ -107,9 +108,10 @@ export default function TermsOfServicePage() {
             <List
               items={[
                 "Consent is required and collected via a checkbox opt-in on our forms",
-                "Messages may include missed-call alerts, emergency tags, appointment confirmations, support, and service updates",
-                'You may opt out at any time by replying "STOP" — reply "HELP" for assistance',
-                "Message and data rates may apply, and message frequency varies",
+                "Messages may include missed-call alerts, plumbing service request summaries, appointment or booking notifications, daily or weekly call summaries, account setup and billing notifications, customer support messages, and marketing or promotional offers (only if separately consented)",
+                'You may opt out at any time by replying "STOP" to any message — reply "HELP" for assistance',
+                "Message frequency varies; you can expect approximately 5–50 messages per month depending on call volume",
+                "Message and data rates may apply",
                 "Mobile carriers are not liable for delayed or undelivered messages",
               ]}
             />

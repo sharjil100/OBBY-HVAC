@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
           </h1>
 
           <p className="text-sm mb-10" style={{ color: "var(--gray-text)" }}>
-            Effective Date: April 22, 2026
+            Effective Date: April 24, 2026
           </p>
 
           <div
@@ -38,9 +38,20 @@ export default function PrivacyPolicyPage() {
               Important notice regarding text messaging data
             </p>
             <p className="text-sm leading-relaxed" style={{ color: "var(--gray-text)" }}>
-              Obby does <strong>not</strong> share customer opt-in information, including phone
-              numbers and consent records, with any affiliates or third parties for marketing or
-              promotional purposes.
+              No mobile information will be shared with third parties or affiliates for
+              marketing or promotional purposes. Information sharing to subcontractors in
+              support services, such as customer service, is permitted. All other use case
+              categories exclude text messaging originator opt-in data and consent; this
+              information will not be shared with any third parties.
+            </p>
+          </div>
+
+          <div className="mb-10 space-y-4 text-[15px] leading-relaxed" style={{ color: "var(--gray-text)" }}>
+            <p>
+              Obby LLC (&ldquo;Obby,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
+              respects your privacy and is committed to protecting your information. This Privacy
+              Policy explains how we collect, use, and protect your information when you use our
+              services.
             </p>
           </div>
 
@@ -124,8 +135,10 @@ export default function PrivacyPolicyPage() {
             <SubHeading>SMS data protection statement</SubHeading>
             <p>
               No mobile information will be shared with third parties or affiliates for marketing or
-              promotional purposes. Data sharing occurs only with trusted service providers
-              required to deliver SMS on our behalf.
+              promotional purposes. Information sharing to subcontractors in support services, such
+              as customer service, is permitted. All other use case categories exclude text messaging
+              originator opt-in data and consent; this information will not be shared with any third
+              parties.
             </p>
           </Section>
 

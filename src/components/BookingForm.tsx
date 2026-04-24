@@ -6,6 +6,8 @@ import { Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 export default function BookingForm() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", phone: "", company: "", area: "" });
+  const [consentTransactional, setConsentTransactional] = useState(false);
+  const [consentMarketing, setConsentMarketing] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -140,6 +142,43 @@ export default function BookingForm() {
             </div>
           ))}
 
+          {/* SMS Consent Checkboxes */}
+          <div className="space-y-3 pt-1">
+            <ConsentCheckbox
+              id="consent-transactional"
+              checked={consentTransactional}
+              onChange={setConsentTransactional}
+              label="I consent to receive non-marketing text messages from Obby LLC about appointment confirmations, account notifications, service onboarding updates, missed call alerts, and customer support communications. Message frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out."
+            />
+            <ConsentCheckbox
+              id="consent-marketing"
+              checked={consentMarketing}
+              onChange={setConsentMarketing}
+              label="I consent to receive marketing text messages from Obby LLC about special offers, discounts, product updates, and service announcements at the phone number provided. Message frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out."
+            />
+          </div>
+
+          {/* Legal links */}
+          <p className="text-xs leading-relaxed" style={{ color: "rgba(0,0,0,0.45)" }}>
+            By submitting, you agree to our{" "}
+            <a
+              href="/privacy-policy"
+              className="font-semibold"
+              style={{ color: "var(--foreground)", textDecoration: "underline" }}
+            >
+              Privacy Policy
+            </a>{" "}
+            and{" "}
+            <a
+              href="/terms-of-service"
+              className="font-semibold"
+              style={{ color: "var(--foreground)", textDecoration: "underline" }}
+            >
+              Terms of Service
+            </a>
+            .
+          </p>
+
           <button type="submit" className="btn-primary w-full justify-center py-4 text-base mt-2 rounded-lg font-black">
             <Phone className="w-5 h-5" />
             Book My Setup Call
@@ -155,5 +194,36 @@ export default function BookingForm() {
         </form>
       </div>
     </div>
+  );
+}
+
+function ConsentCheckbox({
+  id,
+  checked,
+  onChange,
+  label,
+}: {
+  id: string;
+  checked: boolean;
+  onChange: (v: boolean) => void;
+  label: string;
+}) {
+  return (
+    <label
+      htmlFor={id}
+      className="flex items-start gap-3 cursor-pointer select-none"
+    >
+      <input
+        id={id}
+        type="checkbox"
+        checked={checked}
+        onChange={(e) => onChange(e.target.checked)}
+        className="mt-0.5 shrink-0 w-4 h-4 cursor-pointer"
+        style={{ accentColor: "var(--foreground)" }}
+      />
+      <span className="text-xs leading-relaxed" style={{ color: "rgba(0,0,0,0.55)" }}>
+        {label}
+      </span>
+    </label>
   );
 }
