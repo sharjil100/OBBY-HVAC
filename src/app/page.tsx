@@ -7,6 +7,7 @@ import HowItWorks from "@/components/HowItWorks";
 import WhatYouGet from "@/components/WhatYouGet";
 import MissedCallCalculator from "@/components/MissedCallCalculator";
 import PricingSection from "@/components/PricingSection";
+import BookingFormSection from "@/components/BookingFormSection";
 import WhyDifferent from "@/components/WhyDifferent";
 import Testimonials from "@/components/Testimonials";
 import FAQSection from "@/components/FAQSection";
@@ -20,13 +21,14 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
+        <MissedCallCalculator />
         <MarqueeBanner />
         <WhoItIsFor />
         <ProblemSection />
         <HowItWorks />
         <WhatYouGet />
         <PricingSection />
-        <MissedCallCalculator />
+        <BookingFormSection />
         <WhyDifferent />
         <Testimonials />
         <FAQSection />

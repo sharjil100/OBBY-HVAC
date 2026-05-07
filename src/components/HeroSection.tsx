@@ -1,7 +1,6 @@
 "use client";
 
 import { ArrowRight, CheckCircle2, Star, Phone, Shield, Clock } from "lucide-react";
-import BookingForm from "./BookingForm";
 
 const trustBadges = [
   { icon: Shield, text: "No Setup Fee" },
@@ -17,7 +16,7 @@ const stats = [
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-20 md:pt-24 pb-0 overflow-hidden bg-white">
+    <section className="relative pt-20 md:pt-24 pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[88vh]">
           {/* Left: Copy */}
@@ -191,11 +190,6 @@ export default function HeroSection() {
 
       </div>
 
-      <div id="booking-form" className="mt-16 border-t border-gray-100" style={{ backgroundColor: "#FAFAFA" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <BookingForm />
-        </div>
-      </div>
     </section>
   );
 }
