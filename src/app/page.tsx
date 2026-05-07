@@ -5,6 +5,7 @@ import WhoItIsFor from "@/components/WhoItIsFor";
 import ProblemSection from "@/components/ProblemSection";
 import HowItWorks from "@/components/HowItWorks";
 import WhatYouGet from "@/components/WhatYouGet";
+import MissedCallCalculator from "@/components/MissedCallCalculator";
 import PricingSection from "@/components/PricingSection";
 import WhyDifferent from "@/components/WhyDifferent";
 import Testimonials from "@/components/Testimonials";
@@ -24,6 +25,7 @@ export default function Home() {
         <ProblemSection />
         <HowItWorks />
         <WhatYouGet />
+        <MissedCallCalculator />
         <PricingSection />
         <WhyDifferent />
         <Testimonials />
