@@ -25,8 +25,8 @@ export default function Home() {
         <ProblemSection />
         <HowItWorks />
         <WhatYouGet />
-        <MissedCallCalculator />
         <PricingSection />
+        <MissedCallCalculator />
         <WhyDifferent />
         <Testimonials />
         <FAQSection />
